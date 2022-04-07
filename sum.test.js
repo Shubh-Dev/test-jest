@@ -12,6 +12,10 @@ describe('string methods', () => {
       test('check capitalised', () => {
         expect(instance.capitalize('test')).toBe('Test');
       });
+
+      test('chech if the length is less than or equal to 10') {
+        expect(() => instance.stringLength(11)).toThrow(Error);
+      };
 });
 
 

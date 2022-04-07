@@ -8,7 +8,7 @@ class Strings  {
     if (count > 1 && count <= 10) {
         return 'The string length is below or equal to ten'
     } else {
-        return 'error';
+        throw new Error('something is wrong');
     }
 };
 
